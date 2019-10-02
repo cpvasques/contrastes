@@ -8,19 +8,19 @@ $(document).ready(function() {
 });
 
 function multiply(){
-	$('#fundo').fadeTo('slow', 0.3, function(){
-		$(".bgImg").removeClass('multiplyVermelho');
-		$(".bgImg").removeClass('multiplyAzul');
+	$('#fundo, #diretas1, #diretas2, #diretas3').fadeTo('slow', 0.3, function(){
+		$(".bgImg, #diretas1, #diretas2, #diretas3").removeClass('multiplyVermelho');
+		$(".bgImg, #diretas1, #diretas2, #diretas3").removeClass('multiplyAzul');
 	}).fadeTo('slow', 1);
 	setTimeout(function(){
-			$('#fundo').fadeTo('slow', 0.3, function(){
-				$(".bgImg").addClass('multiplyVermelho');
-				$(".bgImg").removeClass('multiplyAzul');
+			$('#fundo, #diretas1, #diretas2, #diretas3').fadeTo('slow', 0.3, function(){
+				$(".bgImg, #diretas1, #diretas2, #diretas3").addClass('multiplyVermelho');
+				$(".bgImg, #diretas1, #diretas2, #diretas3").removeClass('multiplyAzul');
 			}).fadeTo('slow', 1);
 			setTimeout(function () {
-				$('#fundo').fadeTo('slow', 0.3, function(){
-					$(".bgImg").addClass('multiplyAzul');
-					$(".bgImg").removeClass('multiplyVermelho');
+				$('#fundo, #diretas1, #diretas2, #diretas3').fadeTo('slow', 0.3, function(){
+					$(".bgImg, #diretas1, #diretas2, #diretas3").addClass('multiplyAzul');
+					$(".bgImg, #diretas1, #diretas2, #diretas3").removeClass('multiplyVermelho');
 				}).fadeTo('slow', 1);
 				setTimeout(function(){
 					multiply();
